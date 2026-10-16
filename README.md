@@ -12,6 +12,8 @@
 
 \## Key findings
 
+
+
 \- 20.4% of customers churned (2,037 of 10,000). Every group is compared with this baseline.
 
 \- Strongest signals: age (churn peaks at 56.0% for ages 50-59), number of products (2 products 7.6%, 3 products 82.7%, 4 products 100% on only 60 customers), inactivity (26.9% vs 14.3%), Germany (32.4% vs about 16% in France and Spain) and gender (women 25.1% vs men 16.5%).
@@ -30,11 +32,15 @@
 
 \## Method
 
+
+
 Hypotheses first, Wilson confidence intervals, effect sizes (lift, Cramer's V, rank-biserial) because almost every p-value is tiny at 10,000 rows, bootstrap interval for a rate ratio, segment heatmaps, and a revenue-at-risk proxy with a Pareto chart.
 
 
 
 \## Files
+
+
 
 \- `notebooks/01\_eda.ipynb`: the analysis
 
@@ -50,6 +56,8 @@ Hypotheses first, Wilson confidence intervals, effect sizes (lift, Cramer's V, r
 
 \## Reproduce
 
+
+
 1\. Download the dataset to `data/raw/churn.csv`
 
 2\. `pip install -r requirements.txt`
@@ -60,11 +68,15 @@ Hypotheses first, Wilson confidence intervals, effect sizes (lift, Cramer's V, r
 
 \## Limitations
 
+
+
 Associations in one snapshot, not proof of cause. Revenue at risk is a proxy (balance x assumed margin), not actual bank revenue, and zero-balance customers contribute nothing to it. The churn window is not stated. Segments were picked after looking at several pairs, so treat them as leads.
 
 
 
 \## Roadmap (pending)
+
+
 
 \- SQL replication of the analysis
 
