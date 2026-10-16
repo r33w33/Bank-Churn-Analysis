@@ -74,3 +74,39 @@
 
 \- Pearson correlation measures only linear association and misses U-shaped patterns such as NumOfProducts.
 
+
+
+
+
+
+
+\- Revenue at risk = balance of churned customers x NIM. Base NIM is 3% (0.03), an assumption; sensitivity tested at 2% and 4%. Segment ranking does not depend on NIM because the proxy is linear in it; only absolute amounts change.
+
+\- This is a proxy, not actual bank revenue. Zero-balance customers (36.2%) contribute nothing to it, even though they churn too.
+
+\- The dataset gives no currency, so amounts are in balance units.
+
+\- Segments with fewer than 100 customers are flagged as small and not used for recommendations.
+
+\- (Stretch) cost per contact is an assumed placeholder, not a data value.
+
+
+
+
+
+
+
+
+
+
+
+\- Revenue at risk = balance of churned customers x NIM. Base NIM is 3%; sensitivity tested at 2% and 4%. The ranking does not change with NIM because the proxy is linear in it.
+
+\- This is a proxy, not actual bank revenue. Zero-balance customers (36.2% of customers, 500 of the 2,037 churners) contribute nothing to it.
+
+\- Balance is assumed to be the balance held before the customer left. The dataset gives no currency, so amounts are in balance units.
+
+\- Segments with fewer than 100 customers are flagged and not used for recommendations; none of the 10 age-by-activity segments falls below 100.
+
+\- Breakeven stretch: cost per contact is an assumed placeholder of 5, not a data value, and it ignores the cost of the retention offer.
+

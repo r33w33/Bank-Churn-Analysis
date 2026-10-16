@@ -140,3 +140,51 @@ Ranking by effect size: Age, NumOfProducts, then Geography, IsActiveMember and B
 
 Segments with fewer than 100 customers were ignored (including 4 products, n=60, all churned).
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\## Revenue at risk (Blocks 1.7 and 1.8), NIM 3%
+
+
+
+| Finding | Evidence (number) | So what | Next action |
+
+|---|---|---|---|
+
+| Three inactive segments hold 55% of balance at risk | Inactive 40-49 (25.8%), inactive 50-59 (14.6%), inactive 30-39 (14.4%); total balance at risk 185.6M, revenue proxy 5.57M | Money at risk is concentrated in a few segments | Focus retention effort on these first |
+
+| Largest single pot: inactive customers aged 40-49 | 47.8M balance at risk, 25.8% share, 38.0% churn, n=1,396 | Biggest absolute loss, with a moderate churn rate | Prioritise for retention |
+
+| Rate and money rankings disagree | Inactive 60+: highest churn (85.6%, n=111) but 7th by money (4.7%). Inactive 30-39: churn only 13.6% but 3rd by money (14.4%) | Churn rate alone misleads; size and balance decide the money | Rank segments by both rate and balance at risk |
+
+| Inactive customers carry about 64% of revenue at risk | Five inactive segments = 63.8% of the 5.57M proxy | Inactivity is the main lever | Test re-engagement before offers |
+
+| Targeting order does not depend on NIM | Same top 3 at 2%, 3% and 4%; total proxy 3.71M, 5.57M, 7.42M | NIM changes the size of the figure, not the ranking | Keep NIM as a stated assumption |
+
+| Zero-balance churners are invisible to the proxy | 500 of 2,037 churners (24.5%) have a zero balance | Proxy understates customer-count loss | Report churner counts next to revenue at risk |
+
+
+
+Recommendation (base NIM 3%): target inactive customers aged 50-59 first (81% churn, 373 customers, 14.6% of revenue at risk, about 2,185 balance units at risk per customer), then inactive customers aged 40-49, the largest single pot at 25.8%.
+
+
+
+The revenue figure is a proxy built from balance and an assumed margin, not actual bank revenue. Customers with zero balance contribute nothing to it.
+
