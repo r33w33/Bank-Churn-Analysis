@@ -40,3 +40,35 @@
 
 \- Categories under 5% of customers: 3 products (2.7%) and 4 products (0.6%). Treat any rate for these groups with care because of the small numbers.
 
+
+
+
+
+\## Churn by feature (Block 1.5), baseline 20.4%
+
+
+
+| Finding | Evidence (number) | So what | Next action |
+
+|---|---|---|---|
+
+| Germany churns at about twice the rate of France and Spain | Germany 32.4% (n=2,509, 95% CI 30.6% to 34.3%) vs France 16.2% and Spain 16.7%; lift 1.59 | Germany is the only country above baseline | Check whether balance or product mix explains the gap |
+
+| Women churn more than men | Female 25.1% (n=4,543) vs male 16.5%; lift 1.23 vs 0.81 | Association only; intervals are clear of baseline in both directions | Check whether the gap holds within each country and age band |
+
+| Product count is not linear: 2 products is safest, 3 or more is extreme | 1 product 27.7%, 2 products 7.6%, 3 products 82.7% (n=266), 4 products 100% (n=60) | Holders of 3 or 4 products are almost certain to leave, but the groups are small | Investigate why; do not assume more products causes churn |
+
+| Inactive members churn about 1.9x active members | Inactive 26.9% vs active 14.3%; lift 1.32 vs 0.70 | Inactivity is a clear warning sign | Use as a segmentation flag |
+
+| Churn peaks at ages 50-59 | <30 7.6%, 30-39 10.9%, 40-49 30.8%, 50-59 56.0% (n=869), 60+ 27.9% | Risk rises sharply after 40, then falls after 60 | Profile the 50-59 group (products, balance, activity) |
+
+| Having a credit card makes no difference | With card 20.2% vs without 20.8%; both intervals include the baseline | Not a useful predictor | Drop from segmentation |
+
+| Credit score has a weak effect | Q1 22.5% (CI 20.7% to 24.4%) down to Q4 18.3% (CI 16.7% to 20.1%) | Differences are small and only just clear the baseline | Check effect size in the rank-biserial output |
+
+| Zero-balance customers churn less than those with a balance | Zero balance 13.8% (n=3,617) vs balance Q2 27.4%, Q3 25.3%, Q4 23.0%; Q1 20.6% is close to baseline | A balance on the account goes with higher churn | Check overlap with Germany and with product count |
+
+
+
+Hypothesis results: H1 failed (ratio 1.88, 95% CI 1.74 to 2.05, does not clear 2x). H2 held (40-59 churn 37.1% vs 10.0% under 40). H3 held (3 or more products 85.9% vs 18.2%), with the caveat that the group is small and 2 products is the lowest-churn group.
+

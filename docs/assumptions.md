@@ -38,3 +38,15 @@
 
 \- NumOfProducts 3 and 4 are very small groups (2.7% and 0.6%), so conclusions about them are low-confidence.
 
+
+
+
+
+\- Age bands: <30 (18-29), 30-39, 40-49, 50-59, 60+. CreditScore bands are quintiles (Q1 lowest). Balance bands are Zero plus quartiles of the non-zero balances (Q1 lowest).
+
+\- Effect sizes lead the interpretation because with 10,000 rows almost every test is significant: lift, Cramer's V (categorical) and rank-biserial (numeric).
+
+\- A group is called above or below baseline only when its whole 95% interval sits on one side of 20.4%.
+
+\- All findings are associations. Features overlap (for example balance, country and product count), so no single feature is shown to cause churn.
+
