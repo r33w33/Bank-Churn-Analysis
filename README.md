@@ -6,7 +6,7 @@
 
 
 
-\*\*Data:\*\* Kaggle "Churn Modelling" dataset, 10,000 customers, 14 columns (add the Kaggle link here). The raw file is not included; download it and save it as `data/raw/churn.csv`.
+\*\*Data:\*\* Kaggle "Churn Modelling" dataset, 10,000 customers, 14 columns (\[Churn Modelling dataset on Kaggle](https://www.kaggle.com/datasets/aakash50897/churn-modelling)). The raw file is not included; download it and save it as `data/raw/churn.csv`.
 
 
 
