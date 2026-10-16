@@ -50,3 +50,11 @@
 
 \- All findings are associations. Features overlap (for example balance, country and product count), so no single feature is shown to cause churn.
 
+
+
+
+
+\- Effect-size labels used as rough rules of thumb: about 0.1 small, 0.3 medium, 0.5 large (Cramer's V and rank-biserial). They are not strictly comparable across the two measures.
+
+\- Rank-biserial measures an overall tendency (churners higher or lower) and understates humped relationships such as Age and Balance; the charts are the better guide for those.
+

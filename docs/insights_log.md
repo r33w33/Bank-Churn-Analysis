@@ -72,3 +72,37 @@
 
 Hypothesis results: H1 failed (ratio 1.88, 95% CI 1.74 to 2.05, does not clear 2x). H2 held (40-59 churn 37.1% vs 10.0% under 40). H3 held (3 or more products 85.9% vs 18.2%), with the caveat that the group is small and 2 products is the lowest-churn group.
 
+
+
+
+
+
+
+\## Effect sizes (Block 1.5)
+
+
+
+| Feature | Test result | Effect size | Verdict |
+
+|---|---|---|---|
+
+| Age | p < 0.001 | rank-biserial 0.46 | Strongest signal; churn peaks at ages 50-59 |
+
+| NumOfProducts | p < 0.001 | Cramer's V 0.39 | Strong; 2 products safest, 3 or more extreme |
+
+| Geography | p < 0.001 | Cramer's V 0.17 | Small; driven by Germany |
+
+| IsActiveMember | p < 0.001 | Cramer's V 0.16 | Small; inactive members churn more |
+
+| Balance | p < 0.001 | rank-biserial 0.16 | Small; zero-balance customers churn least |
+
+| Gender | p < 0.001 | Cramer's V 0.11 | Small; women churn more |
+
+| CreditScore | p = 0.02 | rank-biserial -0.03 | Negligible despite p < 0.05 |
+
+| Tenure | p = 0.16 | rank-biserial -0.02 | Negligible and not significant |
+
+
+
+Ranking by effect size: Age, NumOfProducts, then Geography, IsActiveMember and Balance (small), Gender (small), and CreditScore and Tenure (negligible). With 10,000 rows, p-values alone do not separate strong features from weak ones.
+
