@@ -58,3 +58,19 @@
 
 \- Rank-biserial measures an overall tendency (churners higher or lower) and understates humped relationships such as Age and Balance; the charts are the better guide for those.
 
+
+
+
+
+
+
+
+
+\- Segment heatmaps use churn rate by pairs of features; cells with fewer than 100 customers are ignored.
+
+\- Top segments were chosen after looking at several feature pairs, so they are exploratory leads, not confirmed effects. Segments overlap because the pairs share features.
+
+\- Heatmap rates are rounded to two decimals, so segment rates in the log are approximate.
+
+\- Pearson correlation measures only linear association and misses U-shaped patterns such as NumOfProducts.
+

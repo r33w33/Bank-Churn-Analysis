@@ -106,3 +106,37 @@ Hypothesis results: H1 failed (ratio 1.88, 95% CI 1.74 to 2.05, does not clear 2
 
 Ranking by effect size: Age, NumOfProducts, then Geography, IsActiveMember and Balance (small), Gender (small), and CreditScore and Tenure (negligible). With 10,000 rows, p-values alone do not separate strong features from weak ones.
 
+
+
+
+
+
+
+\## Segments and interactions (Block 1.6), baseline 20.4%
+
+
+
+| Finding | Evidence (number) | So what | Next action |
+
+|---|---|---|---|
+
+| Top segment 1: inactive customers aged 50-59 | About 81% churn (n=373) vs 37% for active customers aged 50-59 | Highest-risk large segment; inactivity drives it | Confirm exact interval with the segment table |
+
+| Top segment 2: customers with 3 products | About 83% churn (n=266): 88% if inactive (n=153), 75% if active (n=113) | Extreme churn regardless of activity; small group | Investigate why; may reflect product mix or mis-selling |
+
+| Top segment 3: women in Germany | About 38% churn (n=1,193) vs 28% for men in Germany and 20-21% for women in France and Spain | Germany raises churn for both genders; gender gap appears in every country | Check whether balance or product mix explains Germany |
+
+| Inactivity matters more with age | Inactive vs active: under 30 10% vs 5%; 40-49 38% vs 23%; 50-59 81% vs 37%; 60+ 86% (n=111) vs 13% | Older inactive customers are the real risk; older active customers are not | Use age x activity as a targeting rule |
+
+| 2 products is the safest holding | 10% if inactive, 6% if active | Not simply 'more products is better': the pattern is a U-shape | Compare with 3 products |
+
+| Largest churn volume sits in large moderate-rate groups | Inactive 40-49: about 38% on n=1,396 (roughly 530 churners) | Highest rate is not the same as most customers lost | Size segments by customers lost as well as rate |
+
+| No two numeric columns are strongly correlated | No pair above 0.5; strongest is Balance vs NumOfProducts at -0.30 | No redundant features | None needed |
+
+| Linear correlation hides the product pattern | NumOfProducts vs Exited correlation is -0.05 despite Cramer's V of 0.39 | Do not rely on correlation for non-linear effects | Use group rates for non-linear features |
+
+
+
+Segments with fewer than 100 customers were ignored (including 4 products, n=60, all churned).
+
