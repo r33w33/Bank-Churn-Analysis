@@ -24,3 +24,17 @@
 
 \- RowNumber, CustomerId and Surname are identifiers with no business meaning, so they are excluded from the analysis and from any modelling. The raw file is not changed.
 
+
+
+
+
+
+
+\- Zero balances (36.2% of customers) are treated as genuine zero-balance accounts, not missing data.
+
+\- Age outliers (359 customers beyond the IQR fence, max 92) are plausible real customers, so they are kept.
+
+\- The CreditScore pile-up at 850 looks like a cap on the score scale; the values are kept as they are.
+
+\- NumOfProducts 3 and 4 are very small groups (2.7% and 0.6%), so conclusions about them are low-confidence.
+
